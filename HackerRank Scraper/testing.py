@@ -63,7 +63,6 @@ if __name__ == "__main__":
     userdata_list=[]
     for user in users.username:
         main(user)
-
     userdata_ = pd.DataFrame(userdata_list,columns=['Username','Fullname','Badges and Stars'])
     userdata_.to_csv("usersdata.csv")
     userdata_.to_html("usersdata.html")
